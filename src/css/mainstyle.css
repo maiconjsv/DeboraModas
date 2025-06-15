@@ -7,6 +7,7 @@
 
 body{
     background-color: aqua;
+    padding-top: 70px;
 }
 
 header{
@@ -16,7 +17,7 @@ header{
     position: fixed;
     align-items: center;
     display: flex;
-
+    top: 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
@@ -94,11 +95,11 @@ header h1{
     width: 300px;
     right: -310px;
     top: 0;
-
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     box-shadow:0px 0px 0px 2.5px#8c635aab;
+    z-index: 1000;
     transition: all ease 0.5s;
 }
 .sideBars.sideBarsOn{
@@ -184,3 +185,95 @@ header h1{
 .cartBar.cartBarOn{
     right: 0;
 }
+
+/* banner and intro section*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.intro{
+    background-color: #8C635A;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Mona Sans", sans-serif;
+}
+
+.banner-support{
+    background-color: #D9ADB1;
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.banner-support h1{
+    font-family: "Indie Flower", cursive;
+    text-align: justify;
+    color: #A64B97;
+    font-size: 23px;
+    margin: 22px 22px 0 22px;
+    padding: 20px 0 0 0;
+}
+
+.banner-support h3{
+    color: #A64B97;
+    margin: 10px 0 0 22px;
+    padding: 10px 0 5px 0;
+    font-size: 15px;
+}
+
+.arrow-to-content{
+    background-color: #D9ADB1;
+    border-radius: 40%;
+    margin-left: 22px;
+    color: #A64B97;
+    cursor: pointer;
+}
+
+.arrow-to-content:hover{
+    background-color: #A64B97;
+    color: white;
+}
+
+.arrow-to-content span{
+    padding: 5px;
+    font-size: 30px;
+}
+
+.banner{
+    background-image: url(../imgs/banner-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* informations about the delivery*/
+.informations{
+    background-color:  #D9ADB1;
+    font-family: "Mona Sans", sans-serif;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.informations h3{
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.icons{
+    color: #A64B97;
+    display: flex;
+    flex-direction: row;
+    padding: 6px;
+}
+
+
+
